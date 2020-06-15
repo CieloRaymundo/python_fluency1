@@ -11,33 +11,30 @@
 
 5. Create function, `find_special`, that takes an list of words and returns the index of the first occurrence of the word "special". If the word "special" is not present, it should return, `-1`.
 
-6. Create a function called `valid_contacts`. This function takes an list of `contact` dictionaries (`name` and `phoneNumber` property, remember?). It should return an list of only `contact` objects that have a `phoneNumber` that is a 10-digit string.
+6. Create a function called `valid_contacts`. This function takes an list of `contact` dictionaries (`'name'` and `'phone_number'` property, remember?). It should return an list of only `contact` objects that have a `'phone_number'` that is a 10-digit string.
       ```python
       contacts = [
-        {name: 'Reuben', phoneNumber: '9196218777'},
-        {name: 'Laisha', phoneNumber: '0123334766'},
-        {name: 'Cielo', phoneNumber: '764'},
-        {name: 'Maya', phoneNumber: '7653324599'}
+        {'name': 'Reuben', 'phone_number': '9196218777'},
+        {'name': 'Laisha', 'phone_number': '0123334766'},
+        {'name': 'Cielo', 'phone_number': '764'},
+        {'name': 'Maya', 'phone_number': '7653324599'}
       ];
 
-      valid_contacts(contacts);
-      /* returns
-      [
-        {name: 'Reuben', phoneNumber: '9196218777'},
-        {name: 'Laisha', phoneNumber: '0123334766'},
-        {name: 'Maya', phoneNumber: '7653324599'}
+      valid_contacts(contacts) == [
+        {'name': 'Reuben', 'phone_number': '9196218777'},
+        {'name': 'Laisha', 'phone_number': '0123334766'},
+        {'name': 'Maya', 'phone_number': '7653324599'}
       ]
-      */
       ```
 
-7. Create a function, `contact_names`, that takes an list of `contact` objects and returns an list of `contact` `name`s.
+7. Create a function, `contact_names`, that takes an list of `contact` objects and returns an list of `contact` `'name'`s.
       ```python
        contacts = [
-        {name: 'Reuben', phoneNumber: '9196218777'},
-        {name: 'Laisha', phoneNumber: '0123334766'},
-        {name: 'Cielo', phoneNumber: '764'},
-        {name: 'Maya', phoneNumber: '7653324599'}
+        {'name': 'Reuben', 'phone_number': '9196218777'},
+        {'name': 'Laisha', 'phone_number': '0123334766'},
+        {'name': 'Cielo', 'phone_number': '764'},
+        {'name': 'Maya', 'phone_number': '7653324599'}
       ];
 
-      contact_names(contacts); // ['Reuben', 'Laisha', 'Cielo', 'Maya'];
+      contact_names(contacts) == ['Reuben', 'Laisha', 'Cielo', 'Maya'];
       ```
